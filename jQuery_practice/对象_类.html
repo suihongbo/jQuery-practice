@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象_类</title>
+</head>
+<body>
+<div>
+    234567890-
+</div>
+<script>
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    //原型
+    Person.prototype.eat = function () {//原型对象
+        console.log(this.name + " is eating......");
+    }
+    var p1 = new Person('zhangsan',20);
+    var p2 = new Person('lisi',21);
+
+    console.log(p1);
+    console.log(p2.name);
+    p1.eat();
+    p2.eat();
+</script>
+</body>
+</html>
